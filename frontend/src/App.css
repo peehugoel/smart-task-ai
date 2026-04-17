@@ -1,0 +1,38 @@
+/* Scoped App Styles */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn var(--transition-normal) forwards;
+}
+
+/* Badges */
+.badge {
+  padding: 0.25rem 0.6rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.badge-high { background: rgba(239, 68, 68, 0.2); color: var(--danger); box-shadow: 0 0 10px rgba(239,68,68,0.2); }
+.badge-medium { background: rgba(245, 158, 11, 0.2); color: var(--warning); box-shadow: 0 0 10px rgba(245,158,11,0.2); }
+.badge-low { background: rgba(16, 185, 129, 0.2); color: var(--success); box-shadow: 0 0 10px rgba(16,185,129,0.2); }
